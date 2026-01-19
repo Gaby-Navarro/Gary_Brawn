@@ -1,0 +1,368 @@
+/* Para Gary Brawn */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+/* Encabezado sin espacio - Gary Brawn */
+header {
+  background-color: #fce4ec;
+  color: rosa claro;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  padding: 0 20px;
+}
+
+.logo img {
+  height: 60px;
+  margin: 0;
+}
+
+/* Navegación principal con 6 enlaces de Gary Brawn */
+nav {
+  background-color: #1a1a1a;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  margin: 10px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+}
+
+nav ul li a:hover {
+  background-color: #1a1a1a;
+  color: #000;
+}
+
+/* Main sin espacios entre secciones y con altura completa */
+main {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 0;
+  margin: 0;
+  flex-grow: 1;
+ 
+}
+
+/* Secciones internas para contenido y destacados */
+.contenido-principal,
+.sidebar {
+  padding: 20px;
+  background-color: white;
+  border: 1px solid #ccc;
+  height: 100%;
+}
+
+/* Pie de página de Gary Brawn */
+footer {
+  background-color: #fce4ec;
+  color: rosa claro;
+  text-align: center;
+  padding: 15px;
+}
+
+.redes a {
+  color: white;
+  margin: 0 5px;
+  text-decoration: none;
+}
+
+.redes a:hover {
+  text-decoration: underline;
+}
+
+
+
+
+ .catalogo {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+      background-color: #fff;
+    }
+
+    .producto {
+      border: 1px solid #e0b0ff;
+      background-color: #fce4ec;
+      padding: 15px;
+      text-align: center;
+    }
+
+    .producto img {
+      width: 100%;
+      height: auto;
+      max-height: 250px;
+      object-fit: cover;
+      border-bottom: 1px solid #d4af37;
+      margin-bottom: 10px;
+    }
+
+    .producto h3 {
+      color: #000;
+      margin-bottom: 5px;
+    }
+
+    .producto p {
+      color: #1a1a1a;
+      font-size: 14px;
+    } }
+
+
+
+
+
+
+
+
+.tabla-ofertas {
+      width: 90%;
+      margin: 30px auto;
+      border-collapse: collapse;
+      background-color: #fff;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .tabla-ofertas caption {
+      caption-side: top;
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 15px;
+      color: #d81b60;
+    }
+
+    .tabla-ofertas td {
+      border: 1px solid #d4af37;
+      padding: 12px 15px;
+      vertical-align: top;
+    }
+
+    .tabla-ofertas td.titulo {
+      background-color: #000;
+      color: #f8c471;
+      font-weight: bold;
+      width: 30%;
+      text-align: left;
+    }
+
+    .tabla-ofertas img {
+      width: 120px;
+      height: auto;
+      border-radius: 5px;
+    }
+
+    .precio-original {
+      text-decoration: line-through;
+      color: #888;
+    }
+
+    .precio-oferta {
+      color: #d81b60;
+      font-weight: bold;
+    }
+
+    .producto {
+      margin-bottom: 40px;
+    }
+   
+  
+ 
+
+
+
+.blog {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: #fff;
+      border: 1px solid #d4af37;
+      line-height: 1.6;
+    }
+
+    .blog h2 {
+      color: #d81b60;
+      margin-bottom: 20px;
+    }
+
+    .blog p {
+      margin-bottom: 15px;
+      color: #1a1a1a;
+    }
+
+    .blog .subtitulo {
+      font-weight: bold;
+      margin-top: 30px;
+      color: #000;
+    }
+
+    .blog .firma {
+      margin-top: 40px;
+      font-style: italic;
+      color: #555;
+    }
+   
+  
+ 
+
+
+
+
+
+.formulario-contacto {
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 25px;
+      background-color: #fff;
+      border: 1px solid #d4af37;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .formulario-contacto h2 {
+      text-align: center;
+      color: #1a1a1a;
+      margin-bottom: 20px;
+    }
+
+    .formulario-contacto label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .formulario-contacto input,
+    .formulario-contacto select,
+    .formulario-contacto textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-family: inherit;
+    }
+
+    .formulario-contacto button {
+      background-color: #d81b60;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .formulario-contacto button:hover {
+      background-color: #f8c471;
+      color: #000;
+    }
+
+    .error {
+      color: red;
+      font-size: 14px;
+      margin-bottom: 10px;
+    }
+   
+ 
+ 
+
+
+
+
+
+
+
+
+
+.seccion-novedades {
+      
+      padding: 40px;
+      gap: 40px;
+      justify-content: center;
+      background-color: #fff8f9;
+      
+      display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 0;
+  margin: 0;
+  flex-grow: 1;
+    
+    }
+
+    .contenido-principal {
+      flex: 2;
+     
+    }
+
+    .contenido-principal h2 {
+      color: #d81b60;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .videos {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    .video-item {
+      background-color: #fff;
+      padding: 15px;
+      border: 1px solid #d4af37;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+
+    .video-item video {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    .video-item p {
+      margin-top: 10px;
+      font-weight: bold;
+      color: #333;
+      text-align: center;
+    }
+
+
+.imagen-transicion {
+  max-width: 300px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.imagen-transicion:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
